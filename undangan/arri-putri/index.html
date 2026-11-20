@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan Pernikahan Arri & Putri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F0E4;--ink:#3B1F1A;--muted:#6B5A52;--accent:#6B2E24;--sage:#8FA58A;--card:#EDE5D3;--line:#CBBFA6;--cover:#4A211B;--cover-ink:#F5EEDF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1E1613;--ink:#F1E9DA;--muted:#B8A99B;--accent:#E0B9A5;--card:#2A201C;--line:#4A3B34}}
+:root[data-theme="dark"]{--bg:#1E1613;--ink:#F1E9DA;--muted:#B8A99B;--accent:#E0B9A5;--card:#2A201C;--line:#4A3B34}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:400 16px/1.7 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+.cover{position:fixed;inset:0;z-index:20;background:var(--cover);color:var(--cover-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(24px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px));transition:transform .9s cubic-bezier(.7,0,.2,1)}
+.cover.open{transform:translateY(-100%)}
+.cover .small{font-size:15px;letter-spacing:.04em;opacity:.8;margin:0}
+.cover h1{font-size:clamp(56px,16vw,92px);line-height:1;font-style:italic;margin:18px 0 6px}
+.cover h1 span{display:block;font-size:.5em;font-style:normal;color:var(--sage);margin:4px 0}
+.cover .date{font-family:"Cormorant Garamond",serif;font-size:22px;margin:8px 0 34px}
+.cover form{width:100%;max-width:320px;display:grid;gap:10px}
+.cover label{font-size:14px;opacity:.85}
+input,select,textarea{width:100%;font:inherit;color:inherit;background:transparent;border:1px solid var(--line);border-radius:6px;padding:11px 13px}
+.cover input{border-color:#8a6b60;color:var(--cover-ink);text-align:center}
+.cover input::placeholder{color:#b9a79a}
+.btn{font:500 15px "Hanken Grotesk",sans-serif;border:0;border-radius:6px;padding:12px 22px;background:var(--sage);color:#1E2A1C;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.err{min-height:1.4em;margin:0;font-size:14px;color:#F2B8A4}
+main{max-width:540px;margin:0 auto;padding:0 24px 72px}
+section{padding:64px 0 0;text-align:center}
+section+section{margin-top:0}
+.rule{width:56px;height:1px;background:var(--sage);margin:0 auto 26px}
+h2{font-size:38px;font-style:italic;margin-bottom:18px;color:var(--accent)}
+p{margin:0 0 14px}
+.muted{color:var(--muted)}
+.hero{padding-top:72px}
+.hero h1{font-size:clamp(52px,15vw,84px);font-style:italic;line-height:1.02;color:var(--accent)}
+.hero h1 span{color:var(--sage);font-style:normal}
+.verse{font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.55;font-style:italic;margin:22px 0 8px}
+.couple h3{font-size:34px;line-height:1.15}
+.couple .amp{font-family:"Cormorant Garamond",serif;font-size:44px;color:var(--sage);margin:12px 0}
+.tl{text-align:left;margin:0 auto;max-width:400px;border-left:1px solid var(--sage);padding-left:24px}
+.tl div{position:relative;padding-bottom:26px}
+.tl div::before{content:"";position:absolute;left:-30px;top:9px;width:11px;height:11px;border-radius:50%;background:var(--sage)}
+.tl b{font:600 22px "Cormorant Garamond",serif;display:block}
+.cards{display:grid;gap:14px;margin:22px 0}
+.card{background:var(--card);border-radius:10px;padding:22px 20px}
+.card h3{font-size:28px;color:var(--accent)}
+.card .time{font-family:"Cormorant Garamond",serif;font-size:24px}
+.swatches{display:flex;justify-content:center;gap:12px;margin-top:14px}
+.swatches i{width:34px;height:34px;border-radius:50%;border:1px solid var(--line)}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}
+.count div{background:var(--card);border-radius:10px;padding:16px 4px}
+.count b{display:block;font:500 38px/1 "Cormorant Garamond",serif;color:var(--accent)}
+.count span{font-size:13px;color:var(--muted)}
+form.rsvp{display:grid;gap:12px;text-align:left}
+.rsvp label{font-size:14px;color:var(--muted)}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.choice label{border:1px solid var(--line);border-radius:6px;padding:11px;text-align:center;cursor:pointer;color:var(--ink)}
+.choice input{position:absolute;opacity:0;width:0}
+.choice label:has(input:checked){background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.choice label:has(input:focus-visible){outline:2px solid var(--sage);outline-offset:2px}
+.gift{display:none;margin-top:16px}
+.gift.show{display:block}
+.acc{font:500 26px "Cormorant Garamond",serif;letter-spacing:.04em;margin:6px 0}
+footer{padding-top:64px;text-align:center}
+footer h2{font-size:48px}
+@media (prefers-reduced-motion:reduce){.cover{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="cover" id="cover">
+  <p class="small">Undangan Pernikahan</p>
+  <h1>Arri<span>&amp;</span>Putri</h1>
+  <p class="date">17 Januari 2027</p>
+  <form id="gate" autocomplete="off">
+    <label for="wa">Masukkan nomor WhatsApp Anda untuk membuka undangan</label>
+    <input id="wa" type="tel" inputmode="tel" placeholder="08xxxxxxxxxx" required>
+    <button class="btn" type="submit">Buka Undangan</button>
+    <p class="err" id="err" role="alert"></p>
+  </form>
+</div>
+
+<main id="main" hidden>
+
+<section class="hero">
+  <p class="muted">Undangan Pernikahan</p>
+  <h1>Arri <span>&amp;</span> Putri</h1>
+  <p class="serif" style="font-size:24px;margin-top:10px">Minggu, 17 Januari 2027</p>
+</section>
+
+<section>
+  <div class="rule"></div>
+  <p>Bismillahirrahmanirrahim<br>Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+  <p class="muted">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan kami.</p>
+  <p class="verse">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.”</p>
+  <p class="muted">QS. Ar-Rum: 21</p>
+</section>
+
+<section class="couple">
+  <h2>Mempelai</h2>
+  <h3>Ariansyah Wibowo</h3>
+  <p class="muted">Putra dari Bapak [nama ayah]<br>&amp; Ibu [nama ibu]</p>
+  <div class="amp">&amp;</div>
+  <h3>Putri Nadiyanti</h3>
+  <p class="muted">Putri dari Bapak [nama ayah]<br>&amp; Ibu [nama ibu]</p>
+</section>
+
+<section>
+  <h2>Kisah Kami</h2>
+  <div class="tl">
+    <div><b>Pertemuan</b><span class="muted">[Ceritakan awal pertemuan Arri dan Putri]</span></div>
+    <div><b>Perjalanan</b><span class="muted">[Ceritakan masa-masa kebersamaan]</span></div>
+    <div><b>Lamaran</b><span class="muted">[Ceritakan momen menuju pernikahan]</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Hari Bahagia</h2>
+  <p class="muted">InsyaAllah akan dilaksanakan pada</p>
+  <p class="serif" style="font-size:28px">Minggu, 17 Januari 2027</p>
+  <div class="cards">
+    <div class="card"><h3>Akad Nikah</h3><p class="time">10.00 WIB</p></div>
+    <div class="card"><h3>Resepsi</h3><p class="time">12.00 WIB</p></div>
+  </div>
+  <p><b>The Ayoma Residence</b><br><span class="muted">Jalan Raya Ciater Barat, Kelurahan Rawa Buntu, Ciater, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</span></p>
+  <a class="btn" href="https://maps.app.goo.gl/QZgSYw5By7MFcurTA" target="_blank" rel="noopener">Lihat di Google Maps</a>
+</section>
+
+<section>
+  <h2>Dress Code</h2>
+  <p class="muted">[Dress code akan diisi mempelai]</p>
+  <div class="swatches" aria-hidden="true"><i style="background:#F6F0E4"></i><i style="background:#6B2E24"></i><i style="background:#8FA58A"></i></div>
+</section>
+
+<section>
+  <h2>Menghitung Hari</h2>
+  <div class="count" aria-live="off">
+    <div><b id="d">00</b><span>Hari</span></div>
+    <div><b id="h">00</b><span>Jam</span></div>
+    <div><b id="m">00</b><span>Menit</span></div>
+    <div><b id="s">00</b><span>Detik</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>RSVP &amp; Ucapan</h2>
+  <p class="muted">Konfirmasi kehadiran dan kirim doa untuk kedua mempelai. Pesan akan dikirim lewat WhatsApp.</p>
+  <form class="rsvp" id="rsvp">
+    <div><label for="nm">Nama</label><input id="nm" required></div>
+    <div class="choice">
+      <label><input type="radio" name="hadir" value="Hadir" checked>Hadir</label>
+      <label><input type="radio" name="hadir" value="Tidak bisa hadir">Tidak bisa hadir</label>
+    </div>
+    <div><label for="jml">Jumlah tamu</label>
+      <select id="jml"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+    <div><label for="ucp">Ucapan dan doa</label><textarea id="ucp" rows="4"></textarea></div>
+    <button class="btn" type="submit">Kirim lewat WhatsApp</button>
+  </form>
+</section>
+
+<section>
+  <h2>Amplop Digital</h2>
+  <p class="muted">Doa restu Anda sudah cukup bagi kami. Jika ingin memberi hadiah, dapat dikirim melalui:</p>
+  <button class="btn ghost" id="giftbtn" type="button" aria-expanded="false">Tampilkan rekening</button>
+  <div class="gift" id="gift">
+    <div class="card">
+      <p class="muted" style="margin:0">[Nama bank / e-wallet]</p>
+      <p class="acc" id="acc">[Nomor rekening]</p>
+      <p class="muted">a.n. [Nama pemilik rekening]</p>
+      <button class="btn" id="copy" type="button">Salin nomor</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="rule"></div>
+  <p class="muted">Merupakan kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir dan memberikan doa restu. Atas doa dan restunya, kami ucapkan terima kasih.</p>
+  <h2>Arri &amp; Putri</h2>
+</footer>
+
+</main>
+
+<script>
+// ===== Isi bagian ini =====
+// Nomor WhatsApp mempelai tujuan RSVP, format 62812xxxxxxx (kosongkan jika belum ada)
+var COUPLE_WA = "";
+// Daftar nomor tamu dalam bentuk hash SHA-256 (nomor dinormalkan ke format 62...).
+// Jika kosong, semua nomor bisa membuka undangan (mode pratinjau).
+var ALLOWED = [];
+// ==========================
+
+var $ = function (s) { return document.querySelector(s); };
+
+function norm(n) {
+  var d = String(n).replace(/\D/g, "");
+  if (d.indexOf("0") === 0) d = "62" + d.slice(1);
+  else if (d.indexOf("8") === 0) d = "62" + d;
+  return d;
+}
+async function sha(s) {
+  var b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return Array.from(new Uint8Array(b)).map(function (x) { return x.toString(16).padStart(2, "0"); }).join("");
+}
+function openInvite() {
+  $("#main").hidden = false;
+  $("#cover").classList.add("open");
+  setTimeout(function () { $("#cover").style.display = "none"; window.scrollTo(0, 0); }, 950);
+}
+
+$("#gate").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  var n = norm($("#wa").value), err = $("#err");
+  err.textContent = "";
+  if (n.length < 10) { err.textContent = "Nomor tidak valid. Periksa kembali nomor WhatsApp Anda."; return; }
+  if (ALLOWED.length) {
+    var ok = false;
+    try { ok = ALLOWED.indexOf(await sha(n)) !== -1; } catch (x) { ok = false; }
+    if (!ok) { err.textContent = "Nomor ini belum terdaftar. Hubungi mempelai untuk mendapatkan akses."; return; }
+  }
+  openInvite();
+});
+
+// Countdown ke akad: 17 Jan 2027, 10:00 WIB
+var T = new Date("2027-01-17T10:00:00+07:00").getTime();
+function p(n) { return String(n).padStart(2, "0"); }
+function tick() {
+  var t = Math.max(0, Math.floor((T - Date.now()) / 1000));
+  $("#d").textContent = p(Math.floor(t / 86400));
+  $("#h").textContent = p(Math.floor(t % 86400 / 3600));
+  $("#m").textContent = p(Math.floor(t % 3600 / 60));
+  $("#s").textContent = p(t % 60);
+}
+tick(); setInterval(tick, 1000);
+
+// RSVP lewat WhatsApp
+$("#rsvp").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var h = document.querySelector('input[name="hadir"]:checked').value;
+  var msg = "Assalamu’alaikum, saya " + $("#nm").value + ".\nKonfirmasi: " + h +
+    (h === "Hadir" ? " (" + $("#jml").value + " orang)" : "") +
+    "\nUcapan: " + ($("#ucp").value || "-");
+  window.open("https://wa.me/" + COUPLE_WA + "?text=" + encodeURIComponent(msg), "_blank");
+});
+
+// Amplop digital
+$("#giftbtn").addEventListener("click", function () {
+  var g = $("#gift"), s = g.classList.toggle("show");
+  this.setAttribute("aria-expanded", s);
+  this.textContent = s ? "Sembunyikan rekening" : "Tampilkan rekening";
+});
+$("#copy").addEventListener("click", async function () {
+  var b = this;
+  try { await navigator.clipboard.writeText($("#acc").textContent); b.textContent = "Tersalin"; }
+  catch (x) { b.textContent = "Salin manual ya"; }
+  setTimeout(function () { b.textContent = "Salin nomor"; }, 1800);
+});
+</script>
+</body>
+</html>
